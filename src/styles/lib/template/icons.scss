@@ -1,0 +1,27 @@
+.fa-icon {
+    color: $gray-base;
+    width: 32px;
+    height: 32px;
+    line-height: 29px;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 60px;
+    border: 1px solid $gray-base;
+    &:hover{
+        background-color: $gray-base;
+        color: white;
+    }
+    .fa {
+        border: none;
+    }
+}
+.footer-share-icons{
+    .fa-icon{
+        margin-right: 8px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+}

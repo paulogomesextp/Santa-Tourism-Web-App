@@ -1,0 +1,51 @@
+
+.project-number{
+    color: #e6e6e6;
+    font-size: 3em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    z-index: -1;
+    font-weight: 300;
+}
+
+h2, .h2{
+    &.with-project-number{
+        position: relative;
+        z-index: 1;
+        .project-number{
+            top: -5rem;
+        }
+    }
+}
+
+.project-nav{
+    position: relative;
+    z-index: 1;
+    @include transition(all .2s linear);
+    .project-number{
+        @include transition(all .2s linear);
+        font-size: 5em;
+    }
+    &:hover{
+        .project-number{
+            color: #ccc;
+        }
+    }
+    &.left{
+        .project-number{
+            
+            @media (min-width: $screen-sm) {
+                margin-left: -4rem;
+            }
+        }
+    }
+}
+
+.link-like-text{
+    color: $text-color;
+    &:hover{
+        color: $text-color;
+    }
+}

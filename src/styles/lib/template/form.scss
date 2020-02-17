@@ -1,0 +1,15 @@
+.form-control{
+  box-shadow: none;
+  &:focus {
+      border-color: $gray-base;
+      outline: 0;
+      box-shadow: none;
+  }
+}
+label{
+  font-weight: normal;
+}
+
+textarea{
+  max-width: 100%;
+}
