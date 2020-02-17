@@ -1,212 +1,60 @@
-# Mashup Template
+# [Start Bootstrap - Full Width Pics](https://startbootstrap.com/template-overviews/full-width-pics/)
 
-Mashup Template is a collection of Beautiful HTML5 templates based on pre-built Blocks to create a website in minutes. All Mashup Templates are responsive design , fully customisable and can be use for any commercial project as you wish.
+[Full Width Pics](http://startbootstrap.com/template-overviews/full-width-pics/) is an HTML starter template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template features numerous full width background image content sections.
 
-Check out here: [mashup-template.com](http://mashup-template.com)
+## Preview
 
-## Features
+[![Full Width Pics Preview](https://startbootstrap.com/assets/img/templates/full-width-pics.jpg)](https://blackrockdigital.github.io/startbootstrap-full-width-pics/)
 
-- ES6 with [Babeljs](https://babeljs.io/)
-- Modern browser ready (Edge, Chrome, Mozilla, Opera)
-- Handlebars compilation
-- One click deployment (CLI deployment) with [Now de Zeit](https://zeit.co/)
-- [Webpack](https://webpack.js.org) setup for [production](./config/webpack.prod.js) and [development](./config/webpack.dev.js) environments
-- Live reload with [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
+**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-full-width-pics/)**
 
-## Quick start
+## Status
 
-### Installing the dependencies
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-full-width-pics/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-full-width-pics.svg)](https://www.npmjs.com/package/startbootstrap-full-width-pics)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-full-width-pics.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-full-width-pics)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics?type=dev)
 
-```sh
-git clone --depth=1 <git url> project-name
-cd project-name
-npm install
-```
+## Download and Installation
 
-> You have to have Node (version >= 6) installed on your machine. 
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/full-width-pics/)
+* Install via npm: `npm i startbootstrap-full-width-pics`
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-full-width-pics.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-full-width-pics)
 
-### Running in development mode
+## Usage
 
-With live reload and all others features usefull for developpement
+### Basic Usage
 
-```sh
-npm run dev
-```
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
-The app is available on [localhost:5000](http://localhost:5000)
+### Advanced Usage
 
-### Running in production mode
+After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
-Optimize for production
+You must have npm and Gulp installed globally on your machine in order to use these features.
 
-```sh
-npm start
-```
+## Bugs and Issues
 
-The app is available on [localhost:5000](http://localhost:5000)
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-full-width-pics/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/full-width-pics/).
 
-### Add a new pages
+## About
 
-Create a new file named `custom_page.hbs` inside the pages folder.
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
-```html
-{{!-- Add meta/html pages for constistency --}}
-{{> metaHeader title='Title page' description="description"}}
+* https://startbootstrap.com
+* https://twitter.com/SBootstrap
 
-{{!-- Add the menu for constistency --}}
-{{> header }}
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-{{!-- Your new / custom content can go here --}}
-<div class="section">
-  <div class="row container">
-  </div>
-</div>
+* http://davidmiller.io
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
 
-{{!-- Add the footer for constistency --}}
-{{> footer }}
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-{{!-- Add the meta/html for constistency --}}
-{{> metaFooter}}
-```
+## Copyright and License
 
-Restart your server to see the new pages in `/custom_page.html` and you are good to go !
-
-### Add a new Handlebars helpers
-
-Create a new file named `uppercase.js` inside the templates/helpers folder.
-
-```javascript
-module.exports = function (str) {
-    return str.toUpperCase()
-}
-```
-
-You can then use it inside your .hbs file like this : `{{uppercase "aBcDeF"}}`
-You can find other examples [here](https://github.com/helpers/handlebars-helpers/tree/master/lib)
-
-### Add a new Handlebars partials
-
-Create a new file name `custom_template.hbs` inside the templates/partials folder.
-
-```html
-<p>Custom template</p>
-```
-
-You can then use it inside an .hbs like this : `{{> custom_template }}`
-
-### Add a new Javscript files
-
-Create a new file named `custom_function.js` inside the scripts folder.
-
-```javascript
-// import from npm 
-import jQuery from 'jQuery'
-
-// Import from other file
-import file from './file'
-
-
-function customFunction () {
-    console.log('custom function')
-}
-
-
-export { customFunction }
-```
-
-You can use it in an another file by importing it like this : `import { file} from './custom_function'`.
-Or you can assigning it to the window object like `Object.assign(window, { customFunction})` and using it like this `customFunction()`.
-More informations about [imports](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/import) and [export](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/export).
-
-### Add a new SCSS files
-
-
-Create a new file named `custom_function.scss` inside the styles folder.
-
-```scss
-h1 {
-    color: blue;
-
-    &:hover {
-        color: red;
-    }
-}
-```
-
-You can use the styling by importing it inside the `main.scss` like this : `@import "custom_function";`
-All templates are built on a light version of Bootstrap 3.3.7 and with SCSS.
-
-## Architectures
-
-```sh
-.
-├── config                  # Config for building the project with webpack
-│   ├── webpack.dev.js      # Development settings
-│   └── webpack.prod.js     # Production settings
-├── dist                    # Project files after build
-├── src                     # Source folder for the project
-│   ├── assets              # Assets like img, svg and others goes here
-│   ├── index.js            # Entry points of the application
-│   ├── pages               # Where you write your pages
-│   ├── scripts             # Where you write your custom javascript
-│   │   ├── lib             # Lib used for the project
-│   ├── styles              # Where you write your custom SCSS
-│   │   ├── lib             # Lib used for the project
-│   └── templates           # Folder used by Handlebars
-│       ├── helpers         # Declare your helpers here
-│       └── partials        # Declare your templates partials here
-├── package.json            # The NPM dependencies of the projects
-```
-
-## Deployment
-
-### Now
-
-Orson + Now = <3
-
-- Downloads the Now CLI with npm `npm install -g now` or [here](https://github.com/zeit/now-cli/releases)
-- `now --login` for login into your now account or create a brand new one
-- `npm run deploy:now` inside your project folder. It will build the project then push a static version of the dist folder
-
-You can look at more info about the project [at their website](https://zeit.co/now) and help at `now --help`
-
-### Others free deployment resources
-
-- [Heroku](https://www.heroku.com/) provide a free pricing to deploy a lot of different apps.
-- [Google app Engine](https://cloud.google.com/appengine/) provide a free pricing to deploy static site.
-
-
-## Project References and resources
-
-- [Webpack](https://webpack.js.org/) / [webpack.academy](https://webpack.academy/)
-- [ES6 features](http://es6-features.org/)
-- [Handlebars](http://handlebarsjs.com/)
-- [SCSS](http://sass-lang.com/)
-
-## About Orson.io
-
-Our mission is to help everyone to simply create beautiful and professional websites. Orson.io is an all-included website builder focused on SEO. If you don’t want to code and handle all server settings, [try Orson.io for free](http://en.orson.io)
-        
-
-## License
-
-MIT License
-
-Copyright (c) 2017 Orson
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/gh-pages/LICENSE) license.
